@@ -8,12 +8,17 @@
         </header>
 
         <section class="tabs-content">
+          <!--
+
+          test
+
+         -->
                 <form id="form2" action="<?=base_url()?>index.php/login/registerUser" method="post" enctype="multipart/form-data">
                     <p>Please fill up this form to create an account!</p>
                     <hr>
                     <input type="text" id="fname" name="u_fname" placeholder="First Name" value="<?=set_value('u_fname')?>"/>
                     <span style="font-size:12px;color:red;"><?php echo form_error('u_fname');?></span>
-                    
+
                     <input type="text" id="lname" name="u_lname" placeholder="Last Name" value="<?=set_value('u_lname')?>"/>
                     <span style="font-size:12px;color:red;"><?php echo form_error('u_lname');?></span>
 
@@ -22,7 +27,7 @@
 
                     <input type="text" id="contactno" name="u_contactno" placeholder="Contact Number" value="<?=set_value('u_contactno')?>"/>
                     <span style="font-size:12px;color:red;"><?php echo form_error('u_contactno');?></span>
-                    
+
                     <input type="text" id="email" name="u_email" placeholder="Email Address" value="<?=set_value('u_email')?>"/>
                     <span style="font-size:12px;color:red;"><?php echo form_error('u_email');?></span>
 
@@ -39,11 +44,11 @@
                     <span style="font-size:12px;color:red;"><?php echo form_error('u_avatar');?></span><br>
 
                     <input type="checkbox" id="myCheck" value="myValue" unchecked required/>
-                    
+
                     <label><p3> I accept the <a class="style">Terms of Use</a> & <a class="style">Privacy Policy</a></p3></label>
                     <span id="warning"></span><br><br>
 
-                    <button type="submit" id="sign-up">Sign up</button><br>    
+                    <button type="submit" id="sign-up">Sign up</button><br>
                 </form>
             </div>
 
