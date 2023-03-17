@@ -10,7 +10,7 @@
         <section class="tabs-content">
           <!--
 
-          test
+          test BAKIT AYAW LUMABAS NUNG COMMENT
 
          -->
                 <form id="form2" action="<?=base_url()?>index.php/login/registerUser" method="post" enctype="multipart/form-data">
