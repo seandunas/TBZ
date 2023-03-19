@@ -1,16 +1,13 @@
-<!-- <?php
+<!-- 
+    <?php
     foreach($results as $info):
 
         print_r($info); die();
     ?> -->
-
 <!-- <?php
     $info = $results[0];
     // print_r($info); die();
 ?> -->
-
-
-
     <!-- header area end -->
     <!-- page title area start -->
     <div class="page-title-area">
@@ -46,7 +43,5 @@
             <img src="<?=base_url()?>assets/images/image.jpg" alt="welcome " style="width:100%">
             
         </div>
-
-
 
 <!-- <?php endforeach;?> -->

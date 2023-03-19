@@ -15,11 +15,4 @@ class Login_model extends CI_Model{
     public function insertRegisterUser($array){
         $this->db->insert('tbluserlist', $array);
     }
-
-    public function getCurrentUser($username){
-        $q = $this->db->get_where('tbluserlist',['user_username' => $username]);
-        return $q->result();
-    }
-
-
 }

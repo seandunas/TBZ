@@ -33,7 +33,8 @@ class Login extends CI_Controller{
 
         if($userInfo = $this->login_model->authenticateCredentials($user, $pass)){
             $this->session->is_logged = true;
-
+            $this->session->set_userdata('current_user',$user);
+           
             // $data = [
             //     'results' => $this->login_model->getCurrentUser($user),
             // ];
@@ -41,12 +42,16 @@ class Login extends CI_Controller{
             // //print_r($data); die();
             // $this->load->view('module/include/header',$data);
             // $this->load->view('module/dashboard');
-            // $this->load->view('module/include/footer');         
+            // $this->load->view('module/include/footer');  
+            redirect("dashboard");
+            // $this->load->view('module/include/header');
+            // $this->load->view('module/dashboard');
+            // $this->load->view('module/include/footer');
             
-            redirect("users");
 
         }else{
             $this->session->set_flashdata('is_logged_error',true);
+         
             redirect("login");
         }
     }

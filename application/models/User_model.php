@@ -49,6 +49,11 @@ class User_model extends CI_Model{
             $this->db->insert('tblservicelist', $array);
         }
 
+        public function getCurrentUser($username){
+            $q = $this->db->get_where('tbluserlist',['user_username' => $username]);
+            return $q->result();
+        }
+
         public function updateUser($array, $id){
             $this->db->update('tbluserlist', $array, ['user_id'=>$id]);
         }

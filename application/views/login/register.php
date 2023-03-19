@@ -46,7 +46,6 @@
                     <button type="submit" id="sign-up">Sign up</button><br>    
                 </form>
             </div>
-
         </section>
         <br><br><br>
     </div>
