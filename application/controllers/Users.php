@@ -89,14 +89,16 @@
         
 //=======================================================================
         public function userview(){
+
             $data2 = array(
                 'title' => "User Profile",
             ); 
-            $queryResult['user'] = $this->user_model->getcurrentuser($this->session->userdata('current_user'));
-            echo $queryResult;
-            // $this->load->view('module/include/header', $data2);
-            // $this->load->view('module/userView', $queryResult);
-            // $this->load->view('module/include/footer');
+            $user = $this->user_model->getcurrentuser($this->session->userdata('current_user'));
+            //echo $user_data['user_fname'];
+            
+            $this->load->view('module/include/header', $data2);
+            $this->load->view('module/userView', $user);
+            $this->load->view('module/include/footer');
         }
         // VIEW FOR LIST OF USERS
         public function userList(){                             //WORKING

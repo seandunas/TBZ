@@ -51,7 +51,7 @@
                                 <a href="<?=$this->config->base_url()?>index.php/users/userview" aria-expanded="true"><i class="ti-user"></i><span>User Profile</span></a>
                             </li>
                             <li>
-                                <a href="<?=$this->config->base_url()?>index.php/users" aria-expanded="true"><i class="ti-dashboard"></i><span>Dashboard</span></a>
+                                <a href="<?=$this->config->base_url()?>index.php/dashboard" aria-expanded="true"><i class="ti-dashboard"></i><span>Dashboard</span></a>
                             </li>                                 
                             <li>
                                 <a href="table.php" aria-expanded="true"><i class="fa fa-table"></i>

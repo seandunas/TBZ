@@ -40,6 +40,21 @@ class User_model extends CI_Model{
             return $q->result();
         }
 
+        public function getServiceQuantityByCategoryDog(){
+            $q = $this->db->get_where("tblservicelist",array('service_category' => 'dog'));
+            return $q->num_rows();
+        }
+
+        public function getServiceQuantityByCategoryCat(){
+            $q = $this->db->get_where("tblservicelist",array('service_category' => 'cat'));
+            return $q->num_rows();
+        }
+
+        public function getServiceQuantityByCategoryBoth(){
+            $q = $this->db->get_where("tblservicelist",array('service_category' => 'both'));
+            return $q->num_rows();
+        }
+
         // public function getItemByUsername($tableName, $userFilter, $uname){
         //     $un = $this->db->get_where($tableName,[$userFilter => $uname] );
         //     return $un->result();
@@ -50,9 +65,11 @@ class User_model extends CI_Model{
         }
 
         public function getCurrentUser($username){
-            $q = $this->db->get_where('tbluserlist',['user_username' => $username]);
-            return $q->result();
+            $q = $this->db->get_where('tbluserlist', array('user_username' => $username));
+            return $q->row();
         }
+
+      
 
         public function updateUser($array, $id){
             $this->db->update('tbluserlist', $array, ['user_id'=>$id]);
