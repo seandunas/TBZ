@@ -45,41 +45,41 @@
             </div>
 		</div>
 	</div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+        
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Dogs', 'Cats', 'Both'],
+                datasets: [{
+                    label: 'No. of Service per Category',
+                    data: [<?= $chartData['dog']?>, <?= $chartData['cat']?>, <?= $chartData['both']?>],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(255, 206, 86, 0.8)',
     
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ['Dogs', 'Cats', 'Both'],
-            datasets: [{
-                label: 'No. of Service per Category',
-                data: [<?= $chartData['dog']?>, <?= $chartData['cat']?>, <?= $chartData['both']?>],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',
-                    'rgba(54, 162, 235, 0.8)',
-                    'rgba(255, 206, 86, 0.8)',
-  
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            
-            legend: {
-                position: 'bottom',
+                    ],
+                    borderWidth: 1
+                }]
             },
-            animation: {
-                animateScale: true,
-                animateRotate: true
+            options: {
+                responsive: true,
+                
+                legend: {
+                    position: 'bottom',
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+                
             }
-            
-        }
-    });
-    </script>
+        });
+        </script>
 	<!-- Include Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
