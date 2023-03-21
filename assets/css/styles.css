@@ -82,6 +82,7 @@
 .card-body {
     padding: 25.6px;
     padding: 1.6rem;
+    background-color: #c7d8ec;
 }
 
 .h-full {
@@ -1658,6 +1659,7 @@ table.dbkit-table tr td {
     color: #444;
     line-height: 27px;
     font-weight: 400;
+    /* background: #c7d8ec; */
 }
 
 .according .card-header a {
@@ -1912,7 +1914,7 @@ p.card-text {
 }
 
 .form-control {
-    font-size: 14px;
+    font-size: 10px;
     border: 1px solid rgba(170, 170, 170, .3);
     padding: 10.72px 12.8px;
     padding: .67rem .8rem;

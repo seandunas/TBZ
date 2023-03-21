@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Add Item Here</h1>
+<h3 style="text-align:center">Add Service Here</h3>
 
     <form method="post" class="form-inline" action="<?=base_url()?>index.php/users/insertItem" enctype="multipart/form-data">
         <div class="form-group">
@@ -13,24 +13,25 @@
         </div>
         <div class="form-group">
             <label for="s_price">Price</label>
-            <input type="number" name="s_price">
+            <input type="number" class="form-control" name="s_price">
             <span style="font-size:12px;color:red;"><?php echo form_error('s_price');?></span>
         </div>
         <div class="form-group">
             <label for="s_category">Category</label>
-            <select id="Category" name="s_category">
+            <select id="Category" class="form-control" name="s_category">
                 <option disabled selected value> -- select an option -- </option>
                 <option value="cat">Cat</option>
                 <option value="dog">Dog</option>
                 <option value="both">Both</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-default">Add Record</button>
-    </form> 
+        <button type="submit" class="btn btn-dark">Add Record</button>
+    </form><br>
 
 
     <div class="container">
     <div class="jumbotron">
+    <h4>Service List</h4><br>
         <table class="table table-hover">
             <thead>
                 <th>ID</th>

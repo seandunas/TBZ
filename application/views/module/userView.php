@@ -2,8 +2,8 @@
     <div class="row justify-content-center h-100">
         <div class="col-md-8 my-auto">
             <div class="card h-100 shadow-lg rounded-lg" style="background-color: #ffe5b4;">
-                <div class="card-header" style="background-color: #ff7f50; color: white;">
-                    User Information
+                <div class="card-header" style="background-color: #94bbe9; color: white;">
+                    <h4>User Information</h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
